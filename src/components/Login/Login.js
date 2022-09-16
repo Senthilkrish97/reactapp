@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 import './Login.css';
 
 async function loginUser(credentials) {
-debugger;
+
     return fetch('https://dummyjson.com/auth/login', {
         method: 'POST',
         headers: {
@@ -17,17 +17,17 @@ debugger;
 }
 
 export default function Login({setToken}) {
-    debugger;
+ 
     const [username, setUserName] = useState('kminchelle');
     const [password, setPassword] = useState('0lelplR');
     const handleSubmit = async (e) => {
-        debugger;
+   
         e.preventDefault();
         const token = await  loginUser({
             username,
             password
         });
-        debugger;
+    
         setToken(token);
     }
 

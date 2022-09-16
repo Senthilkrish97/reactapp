@@ -1,14 +1,20 @@
-import React from 'react'
-import './Navbar.css'
-import { Link, Outlet } from 'react-router-dom';
+import React from "react";
+import "./Navbar.css";
+import { Link, NavLink, Outlet } from "react-router-dom";
+import { removeToken } from "../Helper/useToken";
+
 
 function Navbar() {
-    return (
-        <><div className='navbar'>
-            <Link to='/'>Dashboard</Link> 
-            <Link to='Login'>Login</Link>
-        </div><Outlet /></>
-    )
+  return (
+    <>
+      <div className="navbar">
+        <Link to="/">Dashboard</Link>
+        <Link to="AllProducts">All Products</Link>
+        <NavLink onClick={removeToken}>Logout</NavLink>
+      </div>
+      <Outlet />
+    </>
+  );
 }
 
 export default Navbar;

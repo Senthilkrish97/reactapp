@@ -1,11 +1,9 @@
-import React from 'react';
-import {removeToken} from '../App/useToken';
+import React from "react";
 
 export default function Dashboard() {
-  return(
+  return (
     <>
-    <h2>Dashboard</h2>
-    <button onClick={removeToken}>Logout</button>
+      <h2>Dashboard</h2>
     </>
   );
 }

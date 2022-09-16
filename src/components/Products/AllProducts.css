@@ -1,0 +1,9 @@
+td,th{
+    border: 1px solid #ddd;
+   padding: 8px;
+   margin-left: 0px;
+}
+td img{
+    width: 40px;
+    height: 35px;
+}
