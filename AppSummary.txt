@@ -4,4 +4,4 @@ https://www.digitalocean.com/community/tutorials/how-to-add-login-authentication
 
 
 Token Authentication by calling dummyjson API
-Get products by callignng dummyjson Api
+Get products by calling dummyjson Api
