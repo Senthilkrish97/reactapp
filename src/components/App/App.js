@@ -16,10 +16,11 @@ function App() {
   return (
     <div className="wrapper">
       <BrowserRouter>
-        <Navbar />
         <Routes>
-          <Route path="/" element={<Dashboard />} />
-          <Route path="/AllProducts" element={<AllProducts />} />
+          <Route path="/" element={<Navbar />}>
+            <Route index element={<Dashboard />} />
+            <Route path="/AllProducts" element={<AllProducts />} />
+          </Route>
         </Routes>
       </BrowserRouter>
     </div>

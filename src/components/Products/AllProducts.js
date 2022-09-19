@@ -38,7 +38,6 @@ export const AllProducts = () => {
 
         {products.length &&
           products.map((items) => {
-            debugger;
             return (
               <tr key={items.id}>
                 <td>{items.brand}</td>
